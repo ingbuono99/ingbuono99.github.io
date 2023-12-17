@@ -4,7 +4,7 @@
   
 # Walkthrough
 After checking the reachability of the machine, I did basic discovery operations.  
-![Alt text](./image-1.png)  
+![Alt text][./image-1.png] 
   
 Two open ports: 22 and 80, where there is a server hosted on nginx.  
 As you can read, it is specified that the nmap did not follow the redirection to http://pilgrimage.htb/. To solve this, I added that host to the /etc/hosts file with an ``` echo 10.10.11.219 pilrimage.htb > /etc/hosts```.  
