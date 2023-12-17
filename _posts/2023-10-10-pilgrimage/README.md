@@ -9,7 +9,7 @@ After checking the reachability of the machine, I did basic discovery operations
 Two open ports: 22 and 80, where there is a server hosted on nginx.  
 As you can read, it is specified that the nmap did not follow the redirection to http://pilgrimage.htb/. To solve this, I added that host to the /etc/hosts file with an ``` echo 10.10.11.219 pilrimage.htb > /etc/hosts```.  
 Now the nmap follows the redirection, but more interestingly searching on the browser for http://pilgrimage.htb shows the following page:  
-![Alt text](image-2.png)  
+![Alt text][/image-2.png]  
   
 It seems like the server hosts a web application to compress images. At first glance I thought that it could be possible to do some sort of injection, but let's look better at the webapp.  
 I started by registering a new user to the platform (nothing to report here for the PT purposes) and then of course there will be the possibility to logout and login back again.  So it's clear there there will be a database behind the server that stores informations on the users.  
