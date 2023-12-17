@@ -6,7 +6,7 @@ description: "Here you'll find writeups of HTB machines PT done by me"
 # All of these are optional and can be removed or commented out
 email: "test@test.it"
 twitter_username: "None"
-github_username: "Ingbuono99"
+github_username: "ingbuono99"
 linkedin_username: "Buono"
 #facebook_username: username
 #flickr_username: username
@@ -40,3 +40,6 @@ defaults:
       type: post
     values:
       tags: Other
+      image: true
+
+
