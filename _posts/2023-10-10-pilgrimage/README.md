@@ -30,7 +30,7 @@ Another idea that I had was to hide a php shell in an actual jpg file, editing t
 
 I must admit a mistake here, because Dirbuster didn't really got me nothing useful, but launching nmap again (as i should have done early on) showed me a hidden *.git* directory. Lesson learned.
   
-![Alt text](image-4.png)
+<img src="{{ 'image4.png' }}" />
   
 So the *.git* repository means that there we will find all the files componing the webapp. But of course, searching for that URL in the browser gives us *403 Unauthorized*.  
 Fortunately there is a tool called **Git-Dumper** that gets the URL in input and then downloads all the files, retrieved by *host_url/.git/HEAD* (that is accessibile also by the browser).  
