@@ -40,6 +40,5 @@ defaults:
       type: post
     values:
       tags: Other
-      image: true
 
 
