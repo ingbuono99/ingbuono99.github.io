@@ -16,7 +16,7 @@ I started by registering a new user to the platform (nothing to report here for 
 The GUI isn't really different if you login or not, but there is an further functionality if you login: when you compress an image, logged users can see on a tab called *'Dashboard'* the history of their compressions.  
 Basically what happens is that you can upload a png/jpg and the server will compress the image and then return to you a URL where you can access the compressed image.  
   
-![Alt text](image-3.png)
+<img src="{{ '/image3.png' }}" />
   
 Just to report: I believed that the database had a table that stored the usernames and their history of association of image_name and shrunked_url, but actually it seems that it's all lost once the session closes.  
   
