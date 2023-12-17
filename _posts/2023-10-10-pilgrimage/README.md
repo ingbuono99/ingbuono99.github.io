@@ -30,12 +30,12 @@ Another idea that I had was to hide a php shell in an actual jpg file, editing t
 
 I must admit a mistake here, because Dirbuster didn't really got me nothing useful, but launching nmap again (as i should have done early on) showed me a hidden *.git* directory. Lesson learned.
   
-<img src="{{ 'image4.png' }}" />
+<img src="{% link image4.png %}" />
   
 So the *.git* repository means that there we will find all the files componing the webapp. But of course, searching for that URL in the browser gives us *403 Unauthorized*.  
 Fortunately there is a tool called **Git-Dumper** that gets the URL in input and then downloads all the files, retrieved by *host_url/.git/HEAD* (that is accessibile also by the browser).  
   
-![Alt text](image-5.png)
+<img src="{% link /image5.png %}" />
   
 At this point I browsed through the files reading the code. The most interesting is *index.php*, where there is the following code: 
 
@@ -75,7 +75,7 @@ The idea is then using the exploit to read the content of the database in */var/
 I will not explain all the process to use the exploit, but you can find all the steps in the URL provided.   
 I did a first try using the image that was already on the repository. That image managed to get me to read the content of */etc/passwd*, **discovering a system user called Emily**.  
 Then i crafted the image to read the database repository and I used **Cyber Chefs** to decipher the output.    
-![Alt text](image-6.png)
+<img src="{% link ./image6.png %}" />
 
 Important to notice, there is another, better, way to read the content of the database and it is to dowload all in a .dump file and the open it in the **sqlite3** terminal.  
 ![Alt text](image-8.png)
