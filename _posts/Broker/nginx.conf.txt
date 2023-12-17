@@ -1,0 +1,40 @@
+
+# Imposta l'utente a root
+user root;
+
+# Configurazioni globali degli eventi
+events {
+    worker_connections 1024;  # Numero massimo di connessioni simultanee per worker
+}
+
+http {
+    # Altre configurazioni globali
+
+    server {
+        listen 8282;
+        server_name localhost;
+
+        # Directory radice del sito web
+        root /;
+
+        # Log files
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
+
+        # Configurazione dei percorsi
+        location / {
+            try_files $uri $uri/ =404;
+            autoindex on;  # Abilita il directory listing
+        }
+
+        # Configurazione per il supporto PHP (se necessario)
+        # location ~ \.php$ {
+        #     include snippets/fastcgi-php.conf;
+        #     fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        #     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        #     include fastcgi_params;
+        # }
+
+        # Altre configurazioni specifiche, se necessario
+    }
+}
