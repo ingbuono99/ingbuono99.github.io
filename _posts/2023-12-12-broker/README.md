@@ -1,15 +1,19 @@
+---
+layout: post
+title: "Broker"
+---
 ## Broker
   
-![Alt text](/assets/2023-12-12-broker/image.png)
+![](/assets/2023-12-12-broker/image.png)
   
 # Walkthrough
 I first did a simple scan with nmap that gave me the following result: 
   
-![Alt text](/assets/2023-12-12-broker/image-6.png)
+![](/assets/2023-12-12-broker/image-6.png)
   
 There is the port 80 open but it returns error 401 Unauthorized.  
 I tried to connect through the browser but it asked for credentials.  
-![Alt text](/assets/2023-12-12-broker/image-7.png)  
+![](/assets/2023-12-12-broker/image-7.png)  
 
 The first thought went for credentials: admin/admin. Good enough!  
   
