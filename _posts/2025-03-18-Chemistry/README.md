@@ -1,5 +1,5 @@
 ## Chemistry
-![Alt text](/assets/2025-03-18-Chemistry//assets/2025-03-18-Chemistry/image-25.png)  
+![Alt text](/assets/2025-03-18-Chemistry/image-25.png)  
 # Walkthrough
 First we do a nmap scan:  
 ![Alt text](/assets/2025-03-18-Chemistry/image.png)  
